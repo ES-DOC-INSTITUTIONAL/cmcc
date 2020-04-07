@@ -19,26 +19,6 @@
             "initializedFrom": ""
         }
     }, 
-    "cmcc-cm2-hr5": {
-        "toplevel": {
-            "initializedFrom": ""
-        }, 
-        "aerosol": {
-            "initializedFrom": ""
-        }, 
-        "atmos": {
-            "initializedFrom": ""
-        }, 
-        "land": {
-            "initializedFrom": ""
-        }, 
-        "ocean": {
-            "initializedFrom": ""
-        }, 
-        "seaice": {
-            "initializedFrom": ""
-        }
-    }, 
     "cmcc-cm2-sr5": {
         "toplevel": {
             "initializedFrom": ""
@@ -79,30 +59,7 @@
             "initializedFrom": ""
         }
     }, 
-    "cmcc-esm2-hr5": {
-        "toplevel": {
-            "initializedFrom": ""
-        }, 
-        "aerosol": {
-            "initializedFrom": ""
-        }, 
-        "atmos": {
-            "initializedFrom": ""
-        }, 
-        "land": {
-            "initializedFrom": ""
-        }, 
-        "ocean": {
-            "initializedFrom": ""
-        }, 
-        "ocnbgchem": {
-            "initializedFrom": ""
-        }, 
-        "seaice": {
-            "initializedFrom": ""
-        }
-    }, 
-    "cmcc-esm2-sr5": {
+    "cmcc-esm2": {
         "toplevel": {
             "initializedFrom": ""
         }, 

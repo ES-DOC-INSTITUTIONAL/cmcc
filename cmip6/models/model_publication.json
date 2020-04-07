@@ -19,26 +19,6 @@
             "publish": "off"
         }
     }, 
-    "cmcc-cm2-hr5": {
-        "toplevel": {
-            "publish": "off"
-        }, 
-        "aerosol": {
-            "publish": "off"
-        }, 
-        "atmos": {
-            "publish": "off"
-        }, 
-        "land": {
-            "publish": "off"
-        }, 
-        "ocean": {
-            "publish": "off"
-        }, 
-        "seaice": {
-            "publish": "off"
-        }
-    }, 
     "cmcc-cm2-sr5": {
         "toplevel": {
             "publish": "off"
@@ -79,30 +59,7 @@
             "publish": "off"
         }
     }, 
-    "cmcc-esm2-hr5": {
-        "toplevel": {
-            "publish": "off"
-        }, 
-        "aerosol": {
-            "publish": "off"
-        }, 
-        "atmos": {
-            "publish": "off"
-        }, 
-        "land": {
-            "publish": "off"
-        }, 
-        "ocean": {
-            "publish": "off"
-        }, 
-        "ocnbgchem": {
-            "publish": "off"
-        }, 
-        "seaice": {
-            "publish": "off"
-        }
-    }, 
-    "cmcc-esm2-sr5": {
+    "cmcc-esm2": {
         "toplevel": {
             "publish": "off"
         }, 
