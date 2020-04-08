@@ -1,0 +1,8 @@
+{
+    "mipEra": "cmip6", 
+    "institute": "cmcc", 
+    "seedingSource": "Spreadsheet", 
+    "sourceID": "cmcc-esm2", 
+    "topic": "atmos", 
+    "content": {}
+}
