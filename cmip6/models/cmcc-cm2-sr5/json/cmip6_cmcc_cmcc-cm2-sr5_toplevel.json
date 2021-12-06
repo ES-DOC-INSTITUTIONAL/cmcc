@@ -4,5 +4,302 @@
     "seedingSource": "Spreadsheet", 
     "sourceID": "cmcc-cm2-sr5", 
     "topic": "toplevel", 
-    "content": {}
+    "content": {
+        "cmip6.toplevel.key_properties.name": {
+            "values": [
+                "CMCC-CM2-SR5"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.keywords": {
+            "values": [
+                "CMCC, CESM, climate model"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.flux_correction.details": {
+            "values": [
+                "No fluxes corrections are used in the model."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.genealogy.year_released": {
+            "values": [
+                2019
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.genealogy.CMIP5_parent": {
+            "values": [
+                "CMCC-CESM"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.genealogy.CMIP5_differences": {
+            "values": [
+                "In comparison to its previous version, the model contains many substantial science and infrastructure changes and improvements in all its components. These new advancements include: a different atmospheric model component (CAM) that incorporates significantly advanced features for turbulence and convection representations; a different land model component (CLM) with increase number of PFT components and updated land processes representation; a community based seaice model (CICE) with state of the art thermodyanics formulations and additioanl parameerizations; an updated ocean component (NEMO) with additional features to describe ocean interior dynamics, small scale paramterizations and improved computational capabilities."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.software_properties.code_languages": {
+            "values": [
+                "Fortran, C, Python, Perl"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.software_properties.components_structure": {
+            "values": [
+                "The top-level, independent components are: atmosphere (CAM), land (CLM), ocean (NEMO), sea ice (CICE), river (RTM). These components are coupled to each other via a hub-and-spoke coupling architecture (CPL)."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.software_properties.coupler": {
+            "values": [
+                "Other: CPL6/MCT"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.coupling.atmosphere_double_flux": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.coupling.atmosphere_fluxes_calculation_grid": {
+            "values": [
+                "Ocean grid"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.coupling.atmosphere_relative_winds": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.tuning_applied.description": {
+            "values": [
+                "The details of the model tuning will be described in the CMCC model description manuscript. The primary tuning involved the top-of-the-atmosphere (TOA) heat flux in pre-industrial control simulations. Our desire was to achive a rather small TOA (e.g. < 0.1 W m^-2), mostly working on atmospheric aerosol indiret effects and land processes related to the snow cycle in northern emisphere."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.tuning_applied.global_mean_metrics_used": {
+            "values": [
+                "top-of-the-atmosphere (TOA) heat flux, global-mean ocean temperature, sea-ice extent, sea-ice volume, glacial mass balance, etc."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.tuning_applied.regional_metrics_used": {
+            "values": [
+                "Ocean meridional overturning circulation,  sea-ice distributions, snow cover on nothern emisphere"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.tuning_applied.trend_metrics_used": {
+            "values": [
+                "Adjustments of aerosol indirect effect"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.tuning_applied.energy_balance": {
+            "values": [
+                "Both the coupled system and the individual model components conserve heat."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.tuning_applied.fresh_water_balance": {
+            "values": [
+                "Both the coupled system and the individual model components conserve freshwater / salt (at best of used formulations)"
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.heat.global": {
+            "values": [
+                "In the coupled configurations, surface heat fluxes are exchanged across the component models in a fully conservative way."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.heat.atmos_ocean_interface": {
+            "values": [
+                "All flux exchanges are done in a fully conservative way. "
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.heat.atmos_land_interface": {
+            "values": [
+                "Heat is conserved through the coupler except that the heat content of precipitating water is not tracked."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.heat.atmos_sea-ice_interface": {
+            "values": [
+                "All flux exchanges are done in a fully conservative way. "
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.heat.ocean_seaice_interface": {
+            "values": [
+                "All flux exchanges are done in a fully conservative way. "
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.heat.land_ocean_interface": {
+            "values": [
+                "Stream temperature is not modeled thus there is no heat exchange between the land and the ocean."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.global": {
+            "values": [
+                "All freshwater and salt flux exchanges are fully conserved."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.atmos_ocean_interface": {
+            "values": [
+                "All freshwater flux exchanges are fully conserved."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.atmos_land_interface": {
+            "values": [
+                "Fresh water is conserved through the coupler."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.atmos_sea-ice_interface": {
+            "values": [
+                "All freshwater flux exchanges are fully conserved."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.ocean_seaice_interface": {
+            "values": [
+                "All freshwater and salt flux exchanges are fully conserved."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.runoff": {
+            "values": [
+                "A river routing scheme is used. All liquid and frozen runoff fluxes are sent to the ocean model using conservative mappings."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.fresh_water.endoreic_basins": {
+            "values": [
+                "The salt / freshwater content of these basins are kept constant throughout a simulation using a marginal sea balancing scheme where access (deficit) freshwater is sent to (taken from) the nearest ocean point."
+            ]
+        }, 
+        "cmip6.toplevel.key_properties.conservation.salt.ocean_seaice_interface": {
+            "values": [
+                "All salt exchanges between the ocean and sea ice models are done conservatively."
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.name": {
+            "values": [
+                "RRTMg"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.greenhouse_gases.CO2.provision": {
+            "values": [
+                "Y: Prescribed concentrations, distributions or time series data", 
+                "E: Concentrations calculated interactively driven by prescribed emissions or precursor emissions"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.greenhouse_gases.CH4.provision": {
+            "values": [
+                "Y: Prescribed concentrations, distributions or time series data"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.greenhouse_gases.N2O.provision": {
+            "values": [
+                "Y: Prescribed concentrations, distributions or time series data"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.greenhouse_gases.stratospheric_O3.provision": {
+            "values": [
+                "Other: low top: concentrations from high top simulations; high top: from precursors, using full chemistry"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.greenhouse_gases.CFC.provision": {
+            "values": [
+                "Y: Prescribed concentrations, distributions or time series data"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.SO4.provision": {
+            "values": [
+                "Other:  emission precursors"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.black_carbon.provision": {
+            "values": [
+                "Other:  emission precursors"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.organic_carbon.provision": {
+            "values": [
+                "Other: emission precursors; secondary organic aerosols in high-top use VBS scheme"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.nitrate.provision": {
+            "values": [
+                "N/A: Not applicable - forcing agent is not included"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.cloud_albedo_effect.provision": {
+            "values": [
+                "Other: Prognostic"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.cloud_albedo_effect.aerosol_effect_on_ice_clouds": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.provision": {
+            "values": [
+                "Other: Prognostic"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.aerosol_effect_on_ice_clouds": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.cloud_lifetime_effect.RFaci_from_sulfate_only": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.dust.provision": {
+            "values": [
+                "Other: Emission"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.provision": {
+            "values": [
+                "Other: SO2 emissions"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.historical_explosive_volcanic_aerosol_implementation": {
+            "values": [
+                "Other: SO2 emissions in high-top; concentration in low-top, from high-top simulations"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.tropospheric_volcanic.future_explosive_volcanic_aerosol_implementation": {
+            "values": [
+                "Other: none"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.provision": {
+            "values": [
+                "Other: SO2 emissions in high-top; concentration in low-top, from high-top simulations"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.historical_explosive_volcanic_aerosol_implementation": {
+            "values": [
+                "Other: SO2 emissions in high-top; concentration in low-top, from high-top simulations"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.stratospheric_volcanic.future_explosive_volcanic_aerosol_implementation": {
+            "values": [
+                "Other: None"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.aerosols.sea_salt.provision": {
+            "values": [
+                "Other: Emission"
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.other.land_use.provision": {
+            "values": [
+                "Other: Explicit modeling of the radiative effects of land use change using the Land Use Harmonization version 2 (LUH2) dataset."
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.other.land_use.crop_change_only": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.other.land_use.additional_information": {
+            "values": [
+                "Land Use Harmonization version 2 (LUH2) is used after conversion to CLM plant functional and landunit types."
+            ]
+        }, 
+        "cmip6.toplevel.radiative_forcings.other.solar.provision": {
+            "values": [
+                "irradiance: Solar irradiance forcing"
+            ]
+        }
+    }
 }

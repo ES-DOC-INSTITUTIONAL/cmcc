@@ -4,5 +4,797 @@
     "seedingSource": "Spreadsheet", 
     "sourceID": "cmcc-cm2-sr5", 
     "topic": "land", 
-    "content": {}
+    "content": {
+        "cmip6.land.key_properties.name": {
+            "values": [
+                "Community Land Model version 4.5 (CLM4.5)"
+            ]
+        }, 
+        "cmip6.land.key_properties.keywords": {
+            "values": [
+                "water cycle, energy balance, vegetation, hydrology, snow, land cover and land use change, carbon and nitrogen cycling, rivers, urban"
+            ]
+        }, 
+        "cmip6.land.key_properties.overview": {
+            "values": [
+                "The Community Land Model version 4.5 (CLM4.5) is the land model for the CMCC Coupled Model version 2 (CMCC-CM2). cherchi_2019 document CMCC-CM2 and CLM4.5. A full Technical Description of CLM4.5 oleson_2013 is available here: http://www.cesm.ucar.edu/models/cesm1.2/clm/CLM45_Tech_Note.pdf.\n\nThe model formalizes and quantifies the land surface and terrestrial ecosystem processes. In particular, CLM4.5 describes the cycling of energy, water, and chemical elements which impact and are impacted by climate. The land surface, indeed, is a critical interface through which climate change impacts humans and ecosystems and through which humans and ecosystems can affect global environmental change.\n\nThe model represents many aspects of the land surface such as surface heterogeneity and consists of components or submodels related to land biogeophysics, the hydrologic cycle, biogeochemistry, human dimensions, and ecosystem dynamics. "
+            ]
+        }, 
+        "cmip6.land.key_properties.description": {
+            "values": [
+                "Vegetation composition, structure, and phenology; Prognostic absorption, reflection, and transmittance of solar radiation; Absorption and emission of longwave radiation; Momentum, sensible heat (ground and canopy), and latent heat (ground evaporation, canopy evaporation, transpiration) fluxes; Heat transfer in soil and snow including phase change; Canopy hydrology (interception, throughfall, and drip); Snow hydrology (snow accumulation and melt, compaction, water transfer between snow layers); Soil hydrology (surface runoff, infiltration, redistribution of water within the column, sub-surface drainage, groundwater, no explicit lateral flow); Stomatal physiology and photosynthesis; Lake temperatures and fluxes; Routing of runoff from rivers to ocean; Urban energy balance and climate; Carbon-nitrogen cycling and dynamics; Dynamic landcover change; wood harvest; No dynamic vegetation biogeography."
+            ]
+        }, 
+        "cmip6.land.key_properties.land_atmosphere_flux_exchanges": {
+            "values": [
+                "water", 
+                "energy"
+            ]
+        }, 
+        "cmip6.land.key_properties.atmospheric_coupling_treatment": {
+            "values": [
+                "water vapour: explicit, longwave radiation: explicit"
+            ]
+        }, 
+        "cmip6.land.key_properties.land_cover": {
+            "values": [
+                "vegetated", 
+                "lake", 
+                "urban", 
+                "land ice"
+            ]
+        }, 
+        "cmip6.land.key_properties.land_cover_change": {
+            "values": [
+                "net transitions"
+            ]
+        }, 
+        "cmip6.land.key_properties.tiling": {
+            "values": [
+                "Spatial land surface heterogeneity in CLM is represented as a nested subgrid hierarchy in which grid cells are composed of multiple land units, snow/soil columns, and Plant Functional Types (PFTs). Each grid cell can have a different number of land units, each land unit can have a different number of columns, and each column can have multiple PFTs. The first subgrid level, the land unit, is intended to capture the broadest spatial patterns of subgrid heterogeneity. CLM4.5 accounts for glacier, lake, urban, and vegetated. The land unit level can be used to further delineate these patterns. For example, the urban land unit is divided into density classes representing the tall building district, high density, and medium density urban areas.  The second subgrid level, the column, is intended to capture potential variability in the soil and snow state variables within a single land unit. For example, the vegetated land unit could contain several columns with independently evolving vertical profiles of soil water and temperature. The central characteristic of the column subgrid level is that this is where the state variables for water and energy in the soil and snow are defined, as well as the fluxes of these components within the soil and snow. Regardless of the number and type of PFTs occupying space on the column, the column physics operates with a single set of upper boundary fluxes, as well as a single set of transpiration fluxes from multiple soil levels. These boundary fluxes are weighted averages over all PFTs. Currently, for glacier, lake and vegetated land units, a single column is assigned to each land unit. The urban land units have five columns (roof, sunlit walls and shaded walls, and pervious and impervious canyon floor). The land/sea mask is defined by the CMCC-CM2 ocean model.  Each land grid cell has one elevation, which is defined by the atmosphere model."
+            ]
+        }, 
+        "cmip6.land.key_properties.conservation_properties.energy": {
+            "values": [
+                "Global land energy is approximately conserved in the coupled model. "
+            ]
+        }, 
+        "cmip6.land.key_properties.conservation_properties.water": {
+            "values": [
+                "Global land water is approximately conserved in the coupled model. "
+            ]
+        }, 
+        "cmip6.land.key_properties.conservation_properties.carbon": {
+            "values": [
+                "Carbon error checks at each timestep ensure carbon balance errors < 0.002 gC/m2/yr.  Carbon is conserved through land cover transitions."
+            ]
+        }, 
+        "cmip6.land.key_properties.timestepping_framework.timestep_dependent_on_atmosphere": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.land.key_properties.timestepping_framework.time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.land.key_properties.timestepping_framework.timestepping_method": {
+            "values": [
+                "Timestepping of 30 minutes"
+            ]
+        }, 
+        "cmip6.land.key_properties.software_properties.code_version": {
+            "values": [
+                "CLM4.5"
+            ]
+        }, 
+        "cmip6.land.key_properties.software_properties.code_languages": {
+            "values": [
+                "Fortran"
+            ]
+        }, 
+        "cmip6.land.key_properties.tuning_applied.description": {
+            "values": [
+                "The main CLM4.5 parameters have been kept to default values. The snow aging factor has been tuned to 3 times larger values to make snow aging faster compared to the default configuration. This operation has been done to reach a stable pre-industrial condition."
+            ]
+        }, 
+        "cmip6.land.grid.name": {
+            "values": [
+                "Cartesian latitude longitude"
+            ]
+        }, 
+        "cmip6.land.grid.overview": {
+            "values": [
+                "The atmosphere model grid is a rectilinear cartesian grid in latitude longitude"
+            ]
+        }, 
+        "cmip6.land.grid.horizontal.description": {
+            "values": [
+                "The horizontal land grid is global and is the same as the atmosphere grid.  Each grid cell may have a fraction of land ranging from 0 to 1 (the remainder being ocean). The land/ocean mask is defined by the CMCC-CM2 ocean model."
+            ]
+        }, 
+        "cmip6.land.grid.horizontal.matches_atmosphere_grid": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.land.grid.vertical.description": {
+            "values": [
+                "In the vertical, CLM4.5 accounts for fifteen soil layers, ten lake layers, five urban layers, and up to five snow layers since their number vary according to the snow depth. "
+            ]
+        }, 
+        "cmip6.land.grid.vertical.total_depth": {
+            "values": [
+                35
+            ]
+        }, 
+        "cmip6.land.soil.overview": {
+            "values": [
+                "Soil has 15 layers and a subgrid structure. Each grid cell can have a different number of land units, each land unit can have a different number of columns, and each column can have multiple PFTs. Soil processes modeled include computation of ground albedos, water infiltration and phase change, water runoff and drainage, computation of vertical temperature profiles, and ground radiation."
+            ]
+        }, 
+        "cmip6.land.soil.heat_water_coupling": {
+            "values": [
+                "soil temperatures are employed to determine if water phase change will take place"
+            ]
+        }, 
+        "cmip6.land.soil.number_of_soil layers": {
+            "values": [
+                15
+            ]
+        }, 
+        "cmip6.land.soil.prognostic_variables": {
+            "values": [
+                "Soil mass of water, soil mass of ice, soil temperature, albedo"
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.description": {
+            "values": [
+                "The soil texture and organic matter content determine soil thermal and hydrologic properties. The International Geosphere-Biosphere Programme (IGBP) soil dataset IGBP_2000 of 4931 soil mapping units and their sand and clay content for each soil layer were used to create a mineral soil texture dataset bonan_2002. Soil organic matter data is merged from two sources. The majority of the globe is from ISRIC-WISE batjes_2006. The high latitudes come from the 0.25\u00b0 version of the Northern Circumpolar Soil Carbon Database hugelius_2013. Both datasets report carbon down to 1m depth."
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.structure": {
+            "values": [
+                "The soil column is discretized into fifteen layers "
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.texture": {
+            "values": [
+                "The International Geosphere-Biosphere Programme (IGBP) soil dataset has been used to create a mineral soil texture dataset"
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.organic_matter": {
+            "values": [
+                "Soil organic matter data is merged from two sources. The majority of the globe is from ISRIC-WISE batjes_2006. The high latitudes come from the 0.25\u00b0 version of the Northern Circumpolar Soil Carbon Database hugelius_2013. Both datasets report carbon down to 1m depth."
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.albedo": {
+            "values": [
+                "soil albedos vary with color class. CLM soil colors are prescribed so that they best reproduce observed MODIS local\nsolar noon surface albedo values at the CLM grid cell following the methods of lawrence_2007."
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.water_table": {
+            "values": [
+                "Determination of water table depth is based on work by niu_2007."
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.continuously_varying_soil_depth": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.soil.soil_map.soil_depth": {
+            "values": [
+                "The soil column is discretized into fifteen layers  with a larger amount of layers (8 out of 15) in the first meter of soil, and the remaining 34 meter discretized into 7 layers."
+            ]
+        }, 
+        "cmip6.land.soil.snow_free_albedo.prognostic": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.land.soil.snow_free_albedo.functions": {
+            "values": [
+                "soil humidity", 
+                "Other: soil color"
+            ]
+        }, 
+        "cmip6.land.soil.snow_free_albedo.direct_diffuse": {
+            "values": [
+                "distinction between direct and diffuse albedo"
+            ]
+        }, 
+        "cmip6.land.soil.snow_free_albedo.number_of_wavelength_bands": {
+            "values": [
+                2
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.description": {
+            "values": [
+                "The model parameterizes interception, throughfall, canopy drip, snow accumulation and melt, water transfer between snow layers, infiltration, evaporation, surface runoff, sub-surface drainage, redistribution within the soil column, and groundwater discharge and recharge to simulate changes in canopy water, surface water, snow water, soil water, and soil ice, and water in the unconfined aquifer (all in kg m-2 or mm of H2O)."
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.time_step": {
+            "values": [
+                10800
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.tiling": {
+            "values": [
+                "The soil hydrology is computed in the soil column."
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.vertical_discretisation": {
+            "values": [
+                "Soil has 15 layers at layer depth (in m): 0.0071, 0.0279, 0.0623, 0.1189, 0.2122, 0.3661, 0.6198, 1.0380, 1.7276, 2.8646, 4.7392, 7.8298, 12.9253, 21.3265, 35.1776"
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.number_of_ground_water_layers": {
+            "values": [
+                10
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.lateral_connectivity": {
+            "values": [
+                "Darcian flow: Darcian flow among hillslope tiles"
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.method": {
+            "values": [
+                "Other: SIMTOP model"
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.freezing.number_of_ground_ice_layers": {
+            "values": [
+                10
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.freezing.ice_storage_method": {
+            "values": [
+                "Phase change in soil."
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.freezing.permafrost": {
+            "values": [
+                "Not represented"
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.drainage.description": {
+            "values": [
+                "Drainage or sub-surface runoff is based on the SIMTOP scheme niu_2005 with a modification to account for reduced drainage in frozen soils."
+            ]
+        }, 
+        "cmip6.land.soil.hydrology.drainage.types": {
+            "values": [
+                "topmodel-based"
+            ]
+        }, 
+        "cmip6.land.soil.heat_treatment.description": {
+            "values": [
+                "The second law of heat conduction is solved numerically to calculate the soil, snow, and surface water temperatures for a fifteen-layer soil column with up to five overlying layers of snow and a single surface water layer with the boundary conditions of the heat flux into the top soil, snow, and surface water layers from the overlying atmosphere and zero heat flux at the bottom of the soil column. The temperature profile is calculated first without phase change and then readjusted for phase change."
+            ]
+        }, 
+        "cmip6.land.soil.heat_treatment.time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.land.soil.heat_treatment.tiling": {
+            "values": [
+                "The soil temperature is computed in the soil column."
+            ]
+        }, 
+        "cmip6.land.soil.heat_treatment.vertical_discretisation": {
+            "values": [
+                "Soil has 15 layers at layer depth (in m): 0.0071, 0.0279, 0.0623, 0.1189, 0.2122, 0.3661, 0.6198, 1.0380, 1.7276, 2.8646, 4.7392, 7.8298, 12.9253, 21.3265, 35.1776"
+            ]
+        }, 
+        "cmip6.land.soil.heat_treatment.heat_storage": {
+            "values": [
+                "Explicit diffusion"
+            ]
+        }, 
+        "cmip6.land.soil.heat_treatment.processes": {
+            "values": [
+                "coupling with snow temperature", 
+                "soil moisture freeze-thaw"
+            ]
+        }, 
+        "cmip6.land.snow.name": {
+            "values": [
+                "Snow, Ice, and Aerosol Radiative Model (SNICAR)"
+            ]
+        }, 
+        "cmip6.land.snow.overview": {
+            "values": [
+                "The snowpack can have up to five layers.  Snow processes modeled include vegetation burial by snow, snow intercepted by vegetation, fraction of ground covered by snow, mass of ice and liquid water in snow layers, and snow compaction due to destructive metamorphism, overburden pressure, melt.  Snow albedo and solar absorption within each snow layer are simulated with the Snow, Ice, and Aerosol Radiative Model (SNICAR), which accounts for the effects of black and organic carbon and mineral dust particles within snow."
+            ]
+        }, 
+        "cmip6.land.snow.tiling": {
+            "values": [
+                "Snow-covered and snow-free portions of vegetated and crop land units, and snow-covered and snow-free portions of glacier land units are separately simulated."
+            ]
+        }, 
+        "cmip6.land.snow.number_of_snow_layers": {
+            "values": [
+                5
+            ]
+        }, 
+        "cmip6.land.snow.density": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.snow.water_equivalent": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.snow.heat_content": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.snow.temperature": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.snow.liquid_water_content": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.snow.snow_cover_fractions": {
+            "values": [
+                "ground snow fraction", 
+                "vegetation snow fraction"
+            ]
+        }, 
+        "cmip6.land.snow.processes": {
+            "values": [
+                "snow interception", 
+                "snow melting", 
+                "snow freezing", 
+                "Other: snow aging"
+            ]
+        }, 
+        "cmip6.land.snow.prognostic_variables": {
+            "values": [
+                "Mass of water, mass of ice, layer thickness, temperature, snow water equivalent,"
+            ]
+        }, 
+        "cmip6.land.snow.snow_albedo.type": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.snow.snow_albedo.functions": {
+            "values": [
+                "snow age", 
+                "aerosol deposition"
+            ]
+        }, 
+        "cmip6.land.vegetation.overview": {
+            "values": [
+                "Vegetated surfaces are comprised of up to 15 possible plant functional types (PFTs) plus bare ground. Vegetation structure is defined by leaf and stem area indices and canopy top and bottom heights. Vegetation state (LAI, SAI, canopy top and bottom heights) are calculated prognostically."
+            ]
+        }, 
+        "cmip6.land.vegetation.time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.land.vegetation.dynamic_vegetation": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.vegetation.tiling": {
+            "values": [
+                "Vegetated surfaces are comprised of up to 15 possible plant functional types (PFTs) plus bare ground."
+            ]
+        }, 
+        "cmip6.land.vegetation.vegetation_representation": {
+            "values": [
+                "vegetation types", 
+                "biome types"
+            ]
+        }, 
+        "cmip6.land.vegetation.vegetation_types": {
+            "values": [
+                "broadleaf tree", 
+                "needleleaf tree", 
+                "C3 grass", 
+                "C4 grass"
+            ]
+        }, 
+        "cmip6.land.vegetation.biome_types": {
+            "values": [
+                "evergreen needleleaf forest", 
+                "evergreen broadleaf forest", 
+                "deciduous needleleaf forest", 
+                "deciduous broadleaf forest", 
+                "grassland", 
+                "cropland"
+            ]
+        }, 
+        "cmip6.land.vegetation.vegetation_time_variation": {
+            "values": [
+                "prescribed (varying from files)"
+            ]
+        }, 
+        "cmip6.land.vegetation.vegetation_map": {
+            "values": [
+                "The changes in area over time associated with individual PFTs are prescribed through a forcing dataset. The forcing dataset consists of an annual time series of global grids, where each annual time slice describes the fractional area occupied by all PFTs and the annual wood harvest within each grid cell. This dataset is based on the Land Use Harmonization version 2 (LUH2) data. "
+            ]
+        }, 
+        "cmip6.land.vegetation.interception": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.land.vegetation.phenology": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.vegetation.phenology_description": {
+            "values": [
+                "PFTs are classified into three distinct phenological types that are represented by separate algorithms: an evergreen type, for which some fraction of annual leaf growth persists in the displayed pool for longer than one year; a seasonal-deciduous type with a single growing season per year, controlled mainly by temperature and daylength; and a stress-deciduous type with the potential for multiple growing seasons per year, controlled by temperature and soil moisture conditions."
+            ]
+        }, 
+        "cmip6.land.vegetation.leaf_area_index": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.vegetation.leaf_area_index_description": {
+            "values": [
+                "The seasonal timing of new vegetation growth and litterfall responds to soil and air temperature, soil water availability, and daylength, in varying degrees depending on a specified phenology type for each PFT. The leaf area index is adjusted for vertical burying by snow."
+            ]
+        }, 
+        "cmip6.land.vegetation.biomass": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.vegetation.biomass_description": {
+            "values": [
+                "Allocation of available carbon on each time step is prioritized, with first priority given to the demand for carbon to support maintenance respiration of live tissues. Second priority is to replenish the internal plant carbon pool that supports maintenance respiration during times when maintenance respiration exceeds photosynthesis (e.g. at night, during winter for perennial vegetation, or during periods of drought stress). Third priority is to support growth of new tissues, including allocation to storage pools from which new growth will be displayed in subsequent time steps."
+            ]
+        }, 
+        "cmip6.land.vegetation.biogeography": {
+            "values": [
+                "diagnostic"
+            ]
+        }, 
+        "cmip6.land.vegetation.biogeography_description": {
+            "values": [
+                "Based on PFT distribution."
+            ]
+        }, 
+        "cmip6.land.vegetation.stomatal_resistance": {
+            "values": [
+                "CO2", 
+                "water availability"
+            ]
+        }, 
+        "cmip6.land.vegetation.stomatal_resistance_description": {
+            "values": [
+                "Leaf stomatal resistance is calculated from the Ball-Berry conductance model as described by collatz_1991 and implemented in global climate models sellers_1996. The model relates stomatal conductance (i.e., the inverse of resistance) to net leaf photosynthesis, scaled by the relative humidity at the leaf surface and the CO2 concentration at the leaf surface. "
+            ]
+        }, 
+        "cmip6.land.vegetation.prognostic_variables": {
+            "values": [
+                "LAI, SAI, top plant height, bottom plant height"
+            ]
+        }, 
+        "cmip6.land.energy_balance.overview": {
+            "values": [
+                "A 0.10 W/m2 surface energy balance is checked in the model."
+            ]
+        }, 
+        "cmip6.land.energy_balance.tiling": {
+            "values": [
+                "Energy is computed at column level."
+            ]
+        }, 
+        "cmip6.land.energy_balance.number_of_surface_temperatures": {
+            "values": [
+                6
+            ]
+        }, 
+        "cmip6.land.energy_balance.evaporation": {
+            "values": [
+                "combined"
+            ]
+        }, 
+        "cmip6.land.energy_balance.processes": {
+            "values": [
+                "transpiration"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.overview": {
+            "values": [
+                "CLM includes a fully-prognostic treatment of the terrestrial carbon and nitrogen cycles including interactions between these cycles as mediated by biological mechanisms of plants and soil heterotrophs. The model is fully prognostic with respect to all carbon and nitrogen state variables in the vegetation, litter, and soil organic matter. The seasonal timing of new vegetation growth and litterfall is also prognostic, responding to soil and air temperature, soil water availability, and daylength, in varying degrees depending on a specified phenology type for each PFT. The prognostic LAI, SAI, and vegetation heights are utilized by the biophysical model.\nSeparate state variables for C and N are tracked for leaf, live stem, dead stem, live coarse root, dead coarse root, and fine root pools. Each of these pools has two corresponding storage pools representing, respectively, short-term and long-term storage of non-structural carbohydrates and labile nitrogen. There are two additional carbon pools, one for the storage of growth respiration reserves, and another used to meet excess demand for maintenance respiration during periods with low photosynthesis. One additional nitrogen pool tracks retranslocated nitrogen, mobilized from leaf tissue prior to abscission and litterfall. Altogether there are 20 state variables for vegetation carbon, and 19 for vegetation nitrogen."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.tiling": {
+            "values": [
+                "On natural vegetation landunit, all PFTs compete for water and nutrients from same soil column.  Soil C and litter C is tracked within this soil column.  Vegetation C tracked for each PFT. "
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.anthropogenic_carbon": {
+            "values": [
+                "decay time"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.prognostic_variables": {
+            "values": [
+                "Vegetation: Leaf Area Index; leaf, live stem, dead stem, live coarse root, dead coarse root, fine root (each of these pools has two corresponding storage pools representing short-term and long-term storage of non-structural carbohydrates), growth respiration reserve, excess maintenance respiration, product (100 year, 10 year, 1 year); Soil and litter: coarse woody debris, 3 litter, and 3 soil pools as well as fluxes to and from each of these pools to each other.  GPP, NPP, and all respiration terms."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.number_of_carbon_pools": {
+            "values": [
+                20
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.carbon_pools": {
+            "values": [
+                "Vegetation: leaf, live stem, dead stem, live coarse root, dead coarse root, fine root (each of these pools has two corresponding storage pools representing short-term and long-term storage of non-structural carbohydrates), growth respiration reserve, excess maintenance respiration."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.forest_stand_dynamics": {
+            "values": [
+                "Not available."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.photosynthesis.method": {
+            "values": [
+                "Photosynthesis in C3 plants is based on Farquhar model.  C4 photosynthesis is based on Collatz.  The implementation is described in bonan_2011. "
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.maintainance_respiration": {
+            "values": [
+                "Maintenance respiration is defined as the carbon cost to support the metabolic activity of existing live tissue. Under the assumption that tissue nitrogen content is a suitable index of cellular metabolic rate, maintenance respiration costs for live tissues (leaf, live stem, live coarse root, and fine root) are calculated as functions tissue nitrogen content and the relevant temperature, following the empirical relationship reported by ryan_1991."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.autotrophic_respiration.growth_respiration": {
+            "values": [
+                "Growth respiration is defined as the additional carbon cost for the synthesis of new growth. Growth respiration is calculated as a factor of 0.3 times the total carbon in new growth on a given timestep, based on construction costs for a range of woody and non- woody tissues larcher_1995."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.allocation.method": {
+            "values": [
+                "Fixed carbon allocation dependent on PFT.  The model includes a dynamic allocation scheme for woody vegetation, in which case the ratio for carbon allocation between new stem and new leaf increases with increasing net primary production (NPP)."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.allocation.allocation_bins": {
+            "values": [
+                "leaves + fine roots + coarse roots + stems"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.allocation.allocation_fractions": {
+            "values": [
+                "function of vegetation type"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.phenology.method": {
+            "values": [
+                "Fluxes of carbon and nitrogen from storage pools and into displayed tissue pools pass through a special transfer pool, maintained as a separate state variable for each tissue type. Storage and transfer pools are maintained separately to reduce the complexity of accounting for transfers into and out of storage over the course of a single growing season. PFTs are classified into three distinct phenological types that are represented by separate algorithms: an evergreen type, for which some fraction of annual leaf growth persists in the displayed pool for longer than one year; a seasonal-deciduous type with a single growing season per year, controlled mainly by temperature and daylength; and a stress-deciduous type with the potential for multiple growing seasons per year, controlled by temperature and soil moisture conditions. The three phenology types share a common set of control variables. The calculation of the phenology fluxes is generalized, operating identically for all three phenology types, given a specification of the common control variables."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.vegetation.mortality.method": {
+            "values": [
+                "Whole-plant mortality is parameterized very simply, assuming a mortality rate of 2% yr-1 for all vegetation types.  This is intended to represent the death of individuals from a stand of plants due to the aggregate of processes such as wind throw, insect attack, disease, extreme temperatures or drought, and age-related decline in vigor. These processes are referred to in aggregate as \u201cgap-phase\u201d mortality. Mortality due to fire and anthropogenic land cover change are treated separately."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.litter.number_of_carbon_pools": {
+            "values": [
+                4
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.litter.carbon_pools": {
+            "values": [
+                "Coarse woody debris, 3 litter pools"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.litter.decomposition": {
+            "values": [
+                "Vertically-resolved Century-based first-order decay "
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.litter.method": {
+            "values": [
+                "The Century-based decomposition cascade is a first-order decay model with parameters for base rate turnover times and respired fractions for each pool.  Carbon pools and decomposition are vertically-resolved.  Environmental modifiers that alter the base turnover rates include temperature, soil moisture, and oxygen concentration for each soil layer, and depth.  Decomposition rates can also be limited by availability of mineral nitrogen."
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.soil.number_of_carbon_pools": {
+            "values": [
+                3
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.soil.carbon_pools": {
+            "values": [
+                "soil1c, soil2c, soil3c"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.soil.decomposition": {
+            "values": [
+                "Vertically-resolved Century-based first-order decay"
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.soil.method": {
+            "values": [
+                "The Century-based decomposition cascade is a first-order decay model with parameters for base rate turnover times and respired fractions for  each pool.  Carbon pools and decomposition are vertically-resolved.  Environmental modifiers that alter the base turnover rates include temperature, soil moisture, and oxygen concentration for each soil layer, and depth.  Decomposition rates can also be limited by availability of mineral nitrogen. "
+            ]
+        }, 
+        "cmip6.land.carbon_cycle.permafrost_carbon.is_permafrost_included": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.nitrogen_cycle.overview": {
+            "values": [
+                "CLM includes a fully-prognostic treatment of the terrestrial carbon and nitrogen cycles including interactions between these cycles as mediated by biological mechanisms of plants and soil heterotrophs. The model is fully prognostic with respect to all carbon and nitrogen state variables in the vegetation, litter, and soil organic matter. The seasonal timing of new vegetation growth and litterfall is also prognostic, responding to soil and air temperature, soil water availability, and daylength, in varying degrees depending on a specified phenology type for each PFT. The prognostic LAI, SAI, and vegetation heights are utilized by the biophysical model.\nSeparate state variables for C and N are tracked for leaf, live stem, dead stem, live coarse root, dead coarse root, and fine root pools. Each of these pools has two corresponding storage pools representing, respectively, short-term and long-term storage of non-structural carbohydrates and labile nitrogen. There are two additional carbon pools, one for the storage of growth respiration reserves, and another used to meet excess demand for maintenance respiration during periods with low photosynthesis. One additional nitrogen pool tracks retranslocated nitrogen, mobilized from leaf tissue prior to abscission and litterfall. Altogether there are 20 state variables for vegetation carbon, and 19 for vegetation nitrogen."
+            ]
+        }, 
+        "cmip6.land.nitrogen_cycle.tiling": {
+            "values": [
+                "On natural vegetation landunit, all PFTs compete for water and nutrients from same soil column. "
+            ]
+        }, 
+        "cmip6.land.nitrogen_cycle.time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.land.nitrogen_cycle.prognostic_variables": {
+            "values": [
+                "Vegetation: leaf, live stem, dead stem, live coarse root, dead coarse root, fine root (each of these pools has two corresponding storage pools representing short-term and long-term storage of non-structural carbohydrates), retranslocated nitrogen, product (100 year, 10 year, 1 year); Soil and litter: coarse woody debris, 3 litter, and 3 soil pools as well as fluxes to and from each of these pools to each other. "
+            ]
+        }, 
+        "cmip6.land.river_routing.name": {
+            "values": [
+                "River Transport Model (RTM)"
+            ]
+        }, 
+        "cmip6.land.river_routing.overview": {
+            "values": [
+                "The RTM was developed to route total runoff from the land surface model to either the active ocean or marginal seas which enables the hydrologic cycle to be closed. The RTM uses a linear transport scheme to route water from each grid cell to its downstream neighboring grid cell. Downstream water flow direction in each grid cell is determined as one of eight compass points (north, northeast, east, southeast, south, southwest, west, and northwest) based on the steepest downhill slope as determined from a digital elevation model graham_1999."
+            ]
+        }, 
+        "cmip6.land.river_routing.tiling": {
+            "values": [
+                "No tiling is used in the river routing model."
+            ]
+        }, 
+        "cmip6.land.river_routing.time_step": {
+            "values": [
+                10800
+            ]
+        }, 
+        "cmip6.land.river_routing.grid_inherited_from_land_surface": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.river_routing.grid_description": {
+            "values": [
+                "0.5x0.5degree grid"
+            ]
+        }, 
+        "cmip6.land.river_routing.number_of_reservoirs": {
+            "values": [
+                0
+            ]
+        }, 
+        "cmip6.land.river_routing.water_re_evaporation": {
+            "values": [
+                "irrigation"
+            ]
+        }, 
+        "cmip6.land.river_routing.coupled_to_atmosphere": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.river_routing.coupled_to_land": {
+            "values": [
+                "Surface runoff is routed as overland flow into the river-network. Coupling in the CMIP configuration of the model is assumed to be one-way: from land to river."
+            ]
+        }, 
+        "cmip6.land.river_routing.basin_flow_direction_map": {
+            "values": [
+                "present day"
+            ]
+        }, 
+        "cmip6.land.river_routing.flooding": {
+            "values": [
+                "Flooding is not enabled in CMIP simulations."
+            ]
+        }, 
+        "cmip6.land.river_routing.prognostic_variables": {
+            "values": [
+                "river flow"
+            ]
+        }, 
+        "cmip6.land.river_routing.oceanic_discharge.discharge_type": {
+            "values": [
+                "diffuse"
+            ]
+        }, 
+        "cmip6.land.river_routing.oceanic_discharge.quantities_transported": {
+            "values": [
+                "water"
+            ]
+        }, 
+        "cmip6.land.lakes.name": {
+            "values": [
+                "Lake, Ice, Snow, and Sediment Simulator (LISSS)"
+            ]
+        }, 
+        "cmip6.land.lakes.overview": {
+            "values": [
+                "The lake model, denoted the Lake, Ice, Snow, and Sediment Simulator (LISSS), is from subin_2012. Lakes have spatially variable depth; Lake physics includes freezing and thawing in the lake body, resolved snow layers, and \u201csoil\u201d and bedrock layers below the lake body. Temperatures and ice fractions are simulated for 10 layers; Lake surface fluxes generally follow the formulations for non-vegetated surfaces, including the calculations of aerodynamic resistances; however, the lake surface temperature is solved for simultaneously with the surface fluxes; For direct radiation, the albedo for lakes with ground temperature above freezing is given by pivovarov_1972."
+            ]
+        }, 
+        "cmip6.land.lakes.coupling_with_rivers": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.lakes.time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.land.lakes.vertical_grid": {
+            "values": [
+                "10 layers. the default (50 m lake) body layer thicknesses are given by: 0.1, 1, 2, 3, 4, 5, 7, 7, 10.45, and 10.45 m, with node depths located at the center of each layer (i.e., 0.05, 0.6,\n2.1, 4.6, 8.1, 12.6, 18.6, 25.6, 34.325, 44.775 m)."
+            ]
+        }, 
+        "cmip6.land.lakes.prognostic_variables": {
+            "values": [
+                "temperature, evaporation, albedo, ice fraction, snow, surface energy balance"
+            ]
+        }, 
+        "cmip6.land.lakes.method.ice_treatment": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.land.lakes.method.albedo": {
+            "values": [
+                "prognostic"
+            ]
+        }, 
+        "cmip6.land.lakes.method.dynamics": {
+            "values": [
+                "vertical"
+            ]
+        }, 
+        "cmip6.land.lakes.method.dynamic_lake_extent": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.land.lakes.method.endorheic_basins": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.land.lakes.wetlands.description": {
+            "values": [
+                "the Global Lake and Wetland Database lehner_2004 is currently used to prescribe lake fraction in each land model grid cell, for a total of 2.3 million km-2."
+            ]
+        }
+    }
 }

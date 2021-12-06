@@ -4,5 +4,268 @@
     "seedingSource": "Spreadsheet", 
     "sourceID": "cmcc-cm2-sr5", 
     "topic": "atmos", 
-    "content": {}
+    "content": {
+        "cmip6.atmos.key_properties.name": {
+            "values": [
+                "Community Atmosphere Model 5.3 (CAM5.3)"
+            ]
+        }, 
+        "cmip6.atmos.key_properties.overview": {
+            "values": [
+                "The atmospheric model is the CAM in its version 5.3 (CAM5.3, Neale_2012). A finite-volume dynamical core at approximately 1 degree resolution is used. The vertical structure of CAM consists of 30 vertical levels, with the model top at 2 hPa. Following CMIP5 models classification of low\u2010top and high\u2010top models as in Charlton\u2010Perez_2013, this model would belong to the upper bound of low\u2010top models. CAM is coupled to the other components through the CPL7 coupler (Craig_2012)."
+            ]
+        }, 
+        "cmip6.atmos.key_properties.model_family": {
+            "values": [
+                "AGCM: Atmospheric General Circulation Model"
+            ]
+        }, 
+        "cmip6.atmos.key_properties.basic_approximations": {
+            "values": [
+                "hydrostatic"
+            ]
+        }, 
+        "cmip6.atmos.key_properties.resolution.horizontal_resolution_name": {
+            "values": [
+                "f09"
+            ]
+        }, 
+        "cmip6.atmos.key_properties.resolution.canonical_horizontal_resolution": {
+            "values": [
+                "0.9 x 1.25 degrees lat-lon"
+            ]
+        }, 
+        "cmip6.atmos.key_properties.resolution.range_horizontal_resolution": {
+            "values": [
+                "Uniform 0.9 x 1.25 degrees lat-lon"
+            ]
+        }, 
+        "cmip6.atmos.key_properties.resolution.number_of_vertical_levels": {
+            "values": [
+                30
+            ]
+        }, 
+        "cmip6.atmos.key_properties.resolution.high_top": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.atmos.key_properties.orography.type": {
+            "values": [
+                "fixed: present day"
+            ]
+        }, 
+        "cmip6.atmos.grid.name": {
+            "values": [
+                "Finite Volume regular grid (f09)"
+            ]
+        }, 
+        "cmip6.atmos.grid.overview": {
+            "values": [
+                "CAM5 is run at a horizontal resolution of about 1\u00b0, with a regular grid of 0.9\u00b0 \u00d7 1.25\u00b0. CAM has 30 vertical hybrid levels with about 1.2 km of vertical spacing throughout the free troposphere and the lower stratosphere (17 levels are below 200 hPa). The model top is at 2 hPa (Richter_2014). Following CMIP5 models classi\ufb01cation of low-top and high-top models as in Charlton-Perez_2013, this model would belong to the upper bound of low-top models."
+            ]
+        }, 
+        "cmip6.atmos.grid.discretisation.horizontal.scheme_type": {
+            "values": [
+                "fixed grid"
+            ]
+        }, 
+        "cmip6.atmos.grid.discretisation.horizontal.scheme_method": {
+            "values": [
+                "finite volumes"
+            ]
+        }, 
+        "cmip6.atmos.grid.discretisation.horizontal.scheme_order": {
+            "values": [
+                "second"
+            ]
+        }, 
+        "cmip6.atmos.grid.discretisation.horizontal.horizontal_pole": {
+            "values": [
+                "filter"
+            ]
+        }, 
+        "cmip6.atmos.grid.discretisation.horizontal.grid_type": {
+            "values": [
+                "Latitude-Longitude"
+            ]
+        }, 
+        "cmip6.atmos.grid.discretisation.vertical.coordinate_type": {
+            "values": [
+                "hybrid sigma-pressure: sigma system near terrain and isobaric above", 
+                "vertically lagrangian"
+            ]
+        }, 
+        "cmip6.atmos.dynamical_core.name": {
+            "values": [
+                "Finite Volume (FV)"
+            ]
+        }, 
+        "cmip6.atmos.dynamical_core.overview": {
+            "values": [
+                "In the FV dynamical core the discretization is local and entirely in physical space. The horizontal discretization is based on a conservative \u201cflux-form semi-Lagrangian\u201d scheme described by Lin-Rood_1996 and Lin-Rood_1997. The vertical discretization can be best described as Lagrangian with a conservative re-mapping, which essentially makes it quasi-Lagrangian. FV dynamics and physics are \u201ctime split\u201d in the sense that all prognostic variables are updated sequentially by the \u201cdynamics\u201d and then the \u201cphysics\u201d. The time integration within the FV dynamics is fully explicit, with sub-cycling within the 2D Lagrangian dynamics to stabilize the fastest wave."
+            ]
+        }, 
+        "cmip6.atmos.dynamical_core.timestepping_type": {
+            "values": [
+                "explicit"
+            ]
+        }, 
+        "cmip6.atmos.dynamical_core.diffusion_horizontal.scheme_method": {
+            "values": [
+                "iterated Laplacian"
+            ]
+        }, 
+        "cmip6.atmos.radiation.name": {
+            "values": [
+                "RRTMG"
+            ]
+        }, 
+        "cmip6.atmos.radiation.overview": {
+            "values": [
+                "Radiative transfer calculations in the longwave and shortwave are provided by the radiation code RRTMG (Iacono_2008; Mlawer_1997). This model utilizes the correlated k-distribution technique to calculate irradiance and heating rate efficiently in broad spectral intervals, while realizing the objective of retaining a high level of accuracy relative to measurements and high-resolution line-by-line models. Sub-grid cloud characterization in RRTMG is treated in both the longwave and shortwave spectral regions with McICA, the Monte-Carlo Independent Column Approximation (Pincus-Morcrette_2003), using the maximum-random cloud overlap assumption.\nTo provide fluxes at the top of the atmosphere, RRTMG uses with an additional layer above the CAM 5.0 model top in both the longwave and shortwave. This extra layer is specified by replicating the composition of the highest CAM 5.0 layer into a layer that extends from the top of the model to 10\u22124 hPa. RRTMG does not treat non-LTE (local thermodynamic equilibrium) effects in the upper atmosphere. It provides accurate fluxes and heating rates up to about 0.1 hPa, above which non-LTE effects become more significant."
+            ]
+        }, 
+        "cmip6.atmos.radiation.shortwave_radiation.name": {
+            "values": [
+                "RRTMG_SW"
+            ]
+        }, 
+        "cmip6.atmos.radiation.shortwave_radiation.spectral_intervals": {
+            "values": [
+                14
+            ]
+        }, 
+        "cmip6.atmos.radiation.longwave_radiation.name": {
+            "values": [
+                "RRTMG_LW"
+            ]
+        }, 
+        "cmip6.atmos.turbulence_convection.overview": {
+            "values": [
+                "Moist turbulence scheme in CAM5 is from Bretherton-Park_2009. The role of moist turbulence scheme is to vertically transport heat, moistures, horizontal momentum, and tracers by symmetric turbulences. In the symmetric turbulence, updraft and downdraft have similar vertical velocities, fractional areas, and degrees of saturation. Moist turbulence scheme in CAM5 has the following characteristics: t is a diagnostic TKE-based (Turbulent Kinetic Energy) 1st order K-diffusion scheme with entrainment parameterization but without counter-gradient transport, it simulates cloud \u2212 radiation \u2212 turbulence interactions in an explicit way, which makes it possible to simulate full aerosol indirect effects with direct interactions with cloud macro-microphysics and radiation schemes, using a single set of consistent physical formula, it is operating in any layers above as well as within PBL as long as moist Richardson number is larger than a critical value = 0.19.\n\nThe process of deep convection is treated with a parameterization scheme developed by Zhang-McFarlane_1995 and modified with the addition of convective momentum transports by Richter-Rasch_2008 and a modified dilute plume calculation following Raymond-Blyth_1986, Raymond-Blyth_1992. The scheme is based on a plume ensemble approach where it is assumed that an ensemble of convective scale updrafts (and the associated saturated down-drafts) may exist whenever the atmosphere is conditionally unstable in the lower troposphere. The updraft ensemble is comprised of plumes sufficiently buoyant so as to penetrate the unstable layer, where all plumes have the same upward mass flux at the bottom of the convective layer. Moist convection occurs only when there is convective available potential energy (CAPE) for which parcel ascent from the sub-cloud layer acts to destroy the CAPE at an exponential rate using a specified adjustment time scale.\n\nShallow convection scheme in CAM5 is from Park-Bretherton_2009. The role of shallow convection scheme is to vertically transport heat, moisture, momentum, and tracers by asymmetric turbulences. On the other hands, vertical transport by symmetric turbulences are performed by separate moist turbulence scheme. CAM5\u2019s shallow convection scheme is carefully designed to optimally operate with CAM5\u2019s moist turbulence scheme without missing or double-counting processes. Similar to the other convection schemes, CAM5 shallow convection scheme assumes (1) steady state convective updraft plume, and (2) small updraft fractional area, so that compensating subsidence entirely exists within the same grid box as convective updraft.\nCAM5\u2019s shallow convection scheme consists of 8 main processes: (1) Reconstruction of mean profiles and cloud condensate partitioning, (2) Computation of source air properties of a single ensemble-mean updraft plume at the PBL ( Planetary Boundary Layer ) top, (3) Cloud base mass flux and updraft vertical velocity closures using Convective Inhibition ( CIN ) and TKE ( Turbulent Kinetic Energy ), (4) Vertical evolution of a single entraining-detraining buoyancy sorting plume from the PBL top to the cumulus top, (5) Penetrative entrainment in the overshooting zone near cumulus top, (6) Computation of convective fluxes within the PBL, (7) Computation of grid-mean tendencies of conservative scalars, and (8) Computation of grid-mean tendencies of non-conservative scalars."
+            ]
+        }, 
+        "cmip6.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type": {
+            "values": [
+                "TKE diagnostic"
+            ]
+        }, 
+        "cmip6.atmos.turbulence_convection.boundary_layer_turbulence.closure_order": {
+            "values": [
+                1
+            ]
+        }, 
+        "cmip6.atmos.turbulence_convection.deep_convection.scheme_name": {
+            "values": [
+                "Zhang-McFarlane_1995"
+            ]
+        }, 
+        "cmip6.atmos.turbulence_convection.deep_convection.scheme_type": {
+            "values": [
+                "plume ensemble: Zhang-McFarlane"
+            ]
+        }, 
+        "cmip6.atmos.turbulence_convection.shallow_convection.scheme_name": {
+            "values": [
+                "Park-Bretherton_2009"
+            ]
+        }, 
+        "cmip6.atmos.microphysics_precipitation.overview": {
+            "values": [
+                "The base parameterization of stratiform cloud microphysics is described by Morrison-Gettelman_2008. Details of the CAM implementation are described by Gettelman_2008. Modifications to handle ice nucleation and ice supersaturation are described by Gettelman_2010."
+            ]
+        }, 
+        "cmip6.atmos.cloud_scheme.overview": {
+            "values": [
+                "Cloud macrophysics is a suite of physical processes that computes (1) cloud fractions in each layer, (2) horizontal and vertical overlapping structures of clouds, (3) net conversion rates of water vapor into cloud condensates. Details on CAM5\u2019s cloud macrophysics are discussed in Park_2014."
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.overview": {
+            "values": [
+                "Gravity wave drag due to stationary waves generated by unresolved orography is parameterized following McFarlane_1987. The surface stress is given by a source function that depends on the standard deviation of the unresolved orography, the Brunt\u2013V\u00e4is\u00e4ll\u00e4 frequency and the wind speed in the source region. The vertical profile of the vertical momentum flux is determined scanning all the model levels from the source level up to the model top. The produced vertical momentum flux is constant when the wave does not cross critical levels or does not experience dissipation processes, while it decreases with height in regions of wave breaking/saturation, diagnosed following McFarlane_1987 and Lindzen_1981. Finally, wind tendencies are calculated differentiating the vertical momentum profile.\n\nNon-orographic gravity waves are launched according to trigger functions that depend on the atmospheric state at any given time and location, as discussed by Richter_2010. Two trigger functions are used: convective heat release (which is a calculated model field) and a \u201cfrontogenesis function\u201d (Hoskins_1982) which diagnoses regions of strong wind field deformation and temperature gradient using the horizontal wind components and potential temperature field calculated by the model.\nIn the case of convective excitation, the method of Beres_2005 is used to determine a phase speed spectrum based upon the properties of the convective heating field. A spectrum is launched whenever the deep convection parameterization is active, and the vertical profile of the convective heating, together with the mean wind field in the heating region, are used to determine the phase speed spectrum of the momentum flux. Convectively generated waves are launched at the top of the convective region (which varies according to the depth of the convective heating calculated in the model).\nWaves excited by frontal systems are launched whenever the frontogenesis trigger function exceeds a critical value (see Richter_2010). The waves are launched from a constant source level, which is specified to be 600 mb."
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.background": {
+            "values": [
+                "discrete spectrum"
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.subgrid_scale_orography": {
+            "values": [
+                "effect on drag"
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.orographic_gravity_waves.name": {
+            "values": [
+                "McFarlane 1987"
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.orographic_gravity_waves.source_mechanisms": {
+            "values": [
+                "linear mountain waves"
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.orographic_gravity_waves.propagation_scheme": {
+            "values": [
+                "linear theory"
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.non_orographic_gravity_waves.source_mechanisms": {
+            "values": [
+                "convection", 
+                "Other: fronts"
+            ]
+        }, 
+        "cmip6.atmos.gravity_waves.non_orographic_gravity_waves.propagation_scheme": {
+            "values": [
+                "linear theory"
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.name": {
+            "values": [
+                "Volcanic and Solar Forcings"
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.overview": {
+            "values": [
+                "Solar forcings are taken from a spectral solar irradiance observartional based, time varying dataset. Time varying volcanic species are prescribed in the stratosphere and prognosed in the troposphere."
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.solar_pathways.pathways": {
+            "values": [
+                "SW radiation: Shortwave solar spectral irradiance."
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.solar_constant.type": {
+            "values": [
+                "transient"
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.solar_constant.transient_characteristics": {
+            "values": [
+                "CMIP6 historical reconstructed spectral solar irradiance"
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.orbital_parameters.type": {
+            "values": [
+                "transient"
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.orbital_parameters.transient_method": {
+            "values": [
+                "Obliquity, eccentricity and vernal equinox longitude"
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics": {
+            "values": [
+                "Below the stratosphere volcanic forcing is represented from emissions of minor 'background' volcanoes where burdens are predicted. In the stratopshere volcanic forcing is due to prescribed burdens of sulfate species taken CMIP6 input data. "
+            ]
+        }
+    }
 }

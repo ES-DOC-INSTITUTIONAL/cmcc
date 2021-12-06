@@ -4,5 +4,351 @@
     "seedingSource": "Spreadsheet", 
     "sourceID": "cmcc-cm2-sr5", 
     "topic": "aerosol", 
-    "content": {}
+    "content": {
+        "cmip6.aerosol.key_properties.name": {
+            "values": [
+                "modal aerosol module, 3-mode version (MAM3, Liu_2012) "
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.keywords": {
+            "values": [
+                "sulfate, dust, primary organic carbon, black carbon, sea salt"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.overview": {
+            "values": [
+                "The 3-mode version of MAM (MAM3) takes into account   Aitken,  accumulation  and  coarse  modes. For MAM3 the following assumptions are made: (1) primary carbon is internally mixed with secondary aerosol by merging the primary carbon mode with the accumulation mode; (2)  the  coarse  dust  and  sea  salt  modes  are merged  into  a single coarse mode; (3) the fine dust and sea salt modes are similarly merged with the accumulation mode;  (4)  sulfate  is  partially  neutralized  by  ammonium  in the form of NH4HSO4, so that ammonium is effectively pre-scribed and NH3 is not simulated. The total number of transported aerosol tracers in MAM3 is 15. The transported gas species are SO2, H2O2, DMS, H2SO4, and a lumped semi-volatile  organic  species. (Liu_2012)"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.scheme_scope": {
+            "values": [
+                "troposphere"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.basic_approximations": {
+            "values": [
+                "- primary carbon is internally mixed with secondary aerosol by merging the primary carbon mode with the accumulation mode; \n- the  coarse  dust  and  sea  salt  modes  are merged  into  a single coarse mode; \n- the fine dust and sea salt modes are similarly merged with the accumulation mode;\n- sulfate  is  partially  neutralized  by  ammonium  in the form of NH4HSO4, so that ammonium is effectively pre-scribed and NH3 is not simulated."
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.prognostic_variables_form": {
+            "values": [
+                "3D number concentration for aerosols", 
+                "3D mass/volume ratio for aerosols"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.number_of_tracers": {
+            "values": [
+                15
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.family_approach": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.software_properties.repository": {
+            "values": [
+                "within CAM5"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.software_properties.code_languages": {
+            "values": [
+                "fortran 90"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.timestep_framework.method": {
+            "values": [
+                "Specific timestepping (operator splitting)"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.timestep_framework.split_operator_advection_timestep": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.timestep_framework.split_operator_physical_timestep": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.timestep_framework.integrated_timestep": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.timestep_framework.integrated_scheme_type": {
+            "values": [
+                "Semi-implicit"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.meteorological_forcings.variables_3D": {
+            "values": [
+                "u,v,w,T, Q, P, cloud"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.meteorological_forcings.variables_2D": {
+            "values": [
+                "surface type, leaf area index"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.meteorological_forcings.frequency": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.resolution.name": {
+            "values": [
+                "f09"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.resolution.canonical_horizontal_resolution": {
+            "values": [
+                "0.9 x 1.25 degrees lat-lon"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.resolution.number_of_horizontal_gridpoints": {
+            "values": [
+                64800
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.resolution.number_of_vertical_levels": {
+            "values": [
+                30
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.resolution.is_adaptive_grid": {
+            "values": [
+                "FALSE"
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.tuning_applied.description": {
+            "values": [
+                "Emissions of dust and sea salt depends on sensitively surface wind speeds. Therefore, some tunning of dust and sea salt emissions are necessary when surface winds are changed (e.g., with model resolution). Usually the tunning is achieved to match the model simulated aerosol optical depth near dust and sea salt sources to the observations."
+            ]
+        }, 
+        "cmip6.aerosol.key_properties.tuning_applied.global_mean_metrics_used": {
+            "values": [
+                "Global mean dust optical depth"
+            ]
+        }, 
+        "cmip6.aerosol.grid.name": {
+            "values": [
+                "Finite Volume regular grid (f09)"
+            ]
+        }, 
+        "cmip6.aerosol.grid.overview": {
+            "values": [
+                "The grid coincides with the grid of the atmospheric model CAM5, run at a horizontal resolution of about 1\u00b0, with a regular grid of 0.9\u00b0 \u00d7 1.25\u00b0 and 30 vertical levels up to 2 hPa (Richter_2014)."
+            ]
+        }, 
+        "cmip6.aerosol.grid.matches_atmosphere_grid": {
+            "values": [
+                "TRUE"
+            ]
+        }, 
+        "cmip6.aerosol.grid.resolution.name": {
+            "values": [
+                "f09"
+            ]
+        }, 
+        "cmip6.aerosol.grid.resolution.canonical_horizontal_resolution": {
+            "values": [
+                "0.9 x 1.25 degrees lat-lon"
+            ]
+        }, 
+        "cmip6.aerosol.grid.resolution.number_of_horizontal_gridpoints": {
+            "values": [
+                64800
+            ]
+        }, 
+        "cmip6.aerosol.grid.resolution.number_of_vertical_levels": {
+            "values": [
+                30
+            ]
+        }, 
+        "cmip6.aerosol.grid.resolution.is_adaptive_grid": {
+            "values": [
+                "FALSE"
+            ]
+        }, 
+        "cmip6.aerosol.transport.name": {
+            "values": [
+                "Transport is handled in the atmosphere model CAM5."
+            ]
+        }, 
+        "cmip6.aerosol.transport.overview": {
+            "values": [
+                "Aerosol transport is handled by the finite volume dynamic core"
+            ]
+        }, 
+        "cmip6.aerosol.transport.scheme": {
+            "values": [
+                "Specific transport scheme (eulerian)"
+            ]
+        }, 
+        "cmip6.aerosol.transport.mass_conservation_scheme": {
+            "values": [
+                "Uses atmospheric chemistry transport scheme"
+            ]
+        }, 
+        "cmip6.aerosol.emissions.name": {
+            "values": [
+                "CMIP6"
+            ]
+        }, 
+        "cmip6.aerosol.emissions.overview": {
+            "values": [
+                "Primary black carbon, primary organic matter, secondary organic aerosol precursor, sulfur and sulfate emissions are specified from files.  Dust and sea salt are calculated online. 2% of SO2 emissions are emitted as sulfate (Aitken and accumulation mode, depending on source type)."
+            ]
+        }, 
+        "cmip6.aerosol.emissions.method": {
+            "values": [
+                "Other: antropogenic emissions from Lamarque_2010 IPCC AR5 emission data set", 
+                "Other: Emissions of black carbon and organic carbon represent an update of Bond_2007 and Junker-Liousse_2008", 
+                "Other: Emissions of sulfur dioxide are an update of Smith_2001, Smith_2004"
+            ]
+        }, 
+        "cmip6.aerosol.emissions.sources": {
+            "values": [
+                "Anthropogenic", 
+                "Volcanos", 
+                "Aircraft", 
+                "Fires"
+            ]
+        }, 
+        "cmip6.aerosol.emissions.prescribed_climatology": {
+            "values": [
+                "Monthly"
+            ]
+        }, 
+        "cmip6.aerosol.emissions.prescribed_climatology_emitted_species": {
+            "values": [
+                "bc_a1, so4_a1 , so4_a2, num_a1, num_a2, pom_a1, so4_a1, so4_a2"
+            ]
+        }, 
+        "cmip6.aerosol.emissions.interactive_emitted_species": {
+            "values": [
+                "dst_a1, dst_a2, dst_a3, ncl_a1, ncl_a2, ncl_a3, num_a1, num_a2, num_a3"
+            ]
+        }, 
+        "cmip6.aerosol.concentrations.name": {
+            "values": [
+                "mass/volume mixing ratio, number concentration"
+            ]
+        }, 
+        "cmip6.aerosol.concentrations.overview": {
+            "values": [
+                "Mass mixing ratios of aerosol components (e.g., sufate, BC, dust, sea salt) and number concentrations of aerosol modes are predicted in the aerosol model. Aerosol mixing ratios and number concentrations dynamics due to difference processes are solved by the aerosol model."
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.name": {
+            "values": [
+                "extinction coefficient, single scattering albedo, asymmetric parameter, refractive index"
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.overview": {
+            "values": [
+                "Aerosol optical properties are parameterized in terms of wet refractive index and wet surface mode radius. Volume mixing rule is used to calculate the volume mean wet refractive index for mixtures of insoluble and soluble particles. "
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.mixtures.external": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.mixtures.internal": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.mixtures.mixing_rule": {
+            "values": [
+                "Volume weighted mixing"
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.size": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.internal_mixture": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.impact_of_h2o.external_mixture": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.radiative_scheme.overview": {
+            "values": [
+                "Aerosol radiative effects are treated in the Rapid Radiative Transfer Model for GCMs (RRTMG). Longwave and shortwave radiative transfer are parameterized in CAM5 with the RRTMG, a broadband k-distribution radiation model developed for application to GCMs."
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.radiative_scheme.shortwave_bands": {
+            "values": [
+                14
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.radiative_scheme.longwave_bands": {
+            "values": [
+                16
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.cloud_interactions.overview": {
+            "values": [
+                "Aerosol activation is physically represented and based on the aerosol size distribution, hygroscopicity, and updraft velocity. Thus, aerosol changes in number concentrations are allowed to affect cloud droplet number concentrations and activated aerosols will be transferred to the cloud-borne aerosol. There is a two-way aerosol-cloud interactions with the formation of precipitation that removes cloud-borne aerosols. Aerosols are also allowed to affect ice and mixed-phase clouds by ice nucleation."
+            ]
+        }, 
+        "cmip6.aerosol.optical_radiative_properties.cloud_interactions.cloud_lifetime": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.aerosol.model.name": {
+            "values": [
+                "MAMA3, modal aerosol module, 3-mode version (Liu_2012) "
+            ]
+        }, 
+        "cmip6.aerosol.model.overview": {
+            "values": [
+                "The 3-mode version of MAM (MAM3) takes into account   Aitken,  accumulation  and  coarse  modes. For MAM3 the following assumptions are made: (1) primary carbon is internally mixed with secondary aerosol by merging the primary carbon mode with the accumulation mode; (2)  the  coarse  dust  and  sea  salt  modes  are merged  into  a single coarse mode; (3) the fine dust and sea salt modes are similarly merged with the accumulation mode;  (4)  sulfate  is  partially  neutralized  by  ammonium  in the form of NH4HSO4, so that ammonium is effectively pre-scribed and NH3 is not simulated. The total number of transported aerosol tracers in MAM3 is 15. The transported gas species are SO2, H2O2, DMS, H2SO4, and a lumped semi-volatile  organic  species. (Liu_2012)"
+            ]
+        }, 
+        "cmip6.aerosol.model.processes": {
+            "values": [
+                "Dry deposition", 
+                "Coagulation", 
+                "Nucleation", 
+                "Wet deposition (impaction scavenging)", 
+                "Wet deposition (nucleation scavenging)", 
+                "Advection (horizontal)", 
+                "Advection (vertical)"
+            ]
+        }, 
+        "cmip6.aerosol.model.coupling": {
+            "values": [
+                "Radiation", 
+                "Land surface", 
+                "Ocean", 
+                "Gas phase chemistry", 
+                "Clouds"
+            ]
+        }, 
+        "cmip6.aerosol.model.gas_phase_precursors": {
+            "values": [
+                "SO2", 
+                "VOC", 
+                "NOx", 
+                "Isoprene", 
+                "Ammonia"
+            ]
+        }, 
+        "cmip6.aerosol.model.scheme_type": {
+            "values": [
+                "Modal"
+            ]
+        }
+    }
 }

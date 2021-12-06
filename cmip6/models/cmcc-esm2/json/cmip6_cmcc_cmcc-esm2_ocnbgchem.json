@@ -4,5 +4,275 @@
     "seedingSource": "Spreadsheet", 
     "sourceID": "cmcc-esm2", 
     "topic": "ocnbgchem", 
-    "content": {}
+    "content": {
+        "cmip6.ocnbgchem.key_properties.name": {
+            "values": [
+                "Biogeochemical Flux Model (BFM) v5.2"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.keywords": {
+            "values": [
+                "Ocean, biogeocehmistry, marine ecology, quota model"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.overview": {
+            "values": [
+                "The Biogeochemical Flux Model (BFM v5.2, www.bfm-community.eu/) is a biomass-based numerical model to simulate the major biogeochemical processes occurring in pelagic, benthic and sea-ice components of marine ecosystems. The BFM considers the cycles of nitrogen, phosphorus, silica, iron, carbon, and oxygen in the water, sediments, sea ice and in the related organisms from bacteria to benthic meiofauna. All living organisms are Plankton dynamics are parameterized in terms of functional groups with prescribed functional traits. For instance, the BFM plankton functional groups are subdivided in producers (phytoplankton), consumers (zooplankton), and decomposers (bacteria). These broad functional classifications are further partitioned into functional subgroups to create a planktonic food web (e.g. diatoms, picophytoplankton, microzooplankton, etc.). A full description of model equations and available parameterizations is given in bfm_2020."
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.model_type": {
+            "values": [
+                "PFT: Several plankton types"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.elemental_stoichiometry": {
+            "values": [
+                "Mix of both: Both fixed and mixed stoichiometry"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.elemental_stoichiometry_details": {
+            "values": [
+                "Variable stoichiometry (C, N, P, Si, Fe): Diatoms, Flagellates, Dissolved Organic Matter (pelagic and benthic), Particulate Organic Matter (pelagic and benthic). Fixed stoichiometry (C ratios): Bacteria, Microzooplankton, Mesozooplankton"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.prognostic_variables": {
+            "values": [
+                "Oxygen, Phosphate, Nitrate, Ammonium, Silicate, Bioavailable Iron, Bacteria, Diatoms, Flagellates, Mesozooplankton, Microzooplankton, Dissolved Inorganic Carbon, Total Alkalinity, Calcite, Dissolved Organic Matter, Particulate Organic Matter"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.diagnostic_variables": {
+            "values": [
+                "All variables produced for CMIP6, that are included in list 1.1.1.7"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.damping": {
+            "values": [
+                "None"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.time_stepping_framework.passive_tracers_transport.method": {
+            "values": [
+                "use ocean model transport time step"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.time_stepping_framework.biology_sources_sinks.method": {
+            "values": [
+                "use ocean model transport time step"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.transport_scheme.type": {
+            "values": [
+                "Online"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.transport_scheme.scheme": {
+            "values": [
+                "Other: MUSCL"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.transport_scheme.use_different_scheme": {
+            "values": [
+                "The advective transport of oceanic biogeochemical tracers is computed with MUSCL scheme madec_2017, while active physical tracers are advected using the TVD scheme."
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.boundary_forcing.atmospheric_deposition": {
+            "values": [
+                "from file (interannual variations)"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.boundary_forcing.river_input": {
+            "values": [
+                "from file (climatology)"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_boundary_conditions": {
+            "values": [
+                "Dissolved Inorganic Iron"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.boundary_forcing.sediments_from_explicit_model": {
+            "values": [
+                "Dissolved Inorganic Matter (C, N, P, Si), Particulated Inorganic Matter (C, N, P, Si), Dissolved Inorganic Carbon, Dissolved Oxygen"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_present": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.CO2_exchange_type": {
+            "values": [
+                "OMIP protocol"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_present": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.O2_exchange_type": {
+            "values": [
+                "OMIP protocol"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.DMS_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.N2_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.N2O_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.CFC11_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.CFC12_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.SF6_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.13CO2_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.14CO2_exchange_type": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.gas_exchange.other_gases": {
+            "values": [
+                "None"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.carbon_chemistry.type": {
+            "values": [
+                "OMIP protocol"
+            ]
+        }, 
+        "cmip6.ocnbgchem.key_properties.tuning_applied.description": {
+            "values": [
+                "The model tuning followed indications provided in OMIP and C4MIP protocols to achieve a stable air-sea co2 echange."
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.sulfur_cycle_present": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.nutrients_present": {
+            "values": [
+                "Nitrogen (N)", 
+                "Phosphorous (P)", 
+                "Silicon (S)", 
+                "Iron (Fe)"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.nitrous_species_if_N": {
+            "values": [
+                "Nitrates (NO3)", 
+                "Amonium (NH4)"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.nitrous_processes_if_N": {
+            "values": [
+                "Dentrification", 
+                "Other: Nitrification"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_definition": {
+            "values": [
+                "PFT inclusing size based"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.upper_trophic_levels_treatment": {
+            "values": [
+                "Explicit representation of Micro- and Meso-Zooplankton"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.type": {
+            "values": [
+                "PFT including size based (specify both below): Plankton functional type including size based"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.pft": {
+            "values": [
+                "Diatoms", 
+                "Other: Flagellates"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.phytoplankton.size_classes": {
+            "values": [
+                "Microphytoplankton", 
+                "Nanophytoplankton"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.zooplankton.type": {
+            "values": [
+                "Size based (specify below)"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.ecosystem.zooplankton.size_classes": {
+            "values": [
+                "Microzooplankton", 
+                "Mesozooplankton"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.disolved_organic_matter.bacteria_present": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.disolved_organic_matter.lability": {
+            "values": [
+                "Labile: Less than a few days"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.particules.method": {
+            "values": [
+                "Prognostic"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.particules.types_if_prognostic": {
+            "values": [
+                "POC", 
+                "PIC (calcite)"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.particules.size_if_prognostic": {
+            "values": [
+                "No size spectrum used"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.particules.sinking_speed_if_prognostic": {
+            "values": [
+                "Constant"
+            ]
+        }, 
+        "cmip6.ocnbgchem.tracers.dic_alkalinity.alkalinity": {
+            "values": [
+                "Prognostic"
+            ]
+        }
+    }
 }

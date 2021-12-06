@@ -4,5 +4,349 @@
     "seedingSource": "Spreadsheet", 
     "sourceID": "cmcc-cm2-sr5", 
     "topic": "seaice", 
-    "content": {}
+    "content": {
+        "cmip6.seaice.key_properties.name": {
+            "values": [
+                "Community Ice CodE (CICE) v4"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.keywords": {
+            "values": [
+                "sea ice, Los Alamos"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.overview": {
+            "values": [
+                "The Los Alamos sea ice model (CICE) (hunke_2010) has several interacting components: a thermodynamic model that computes local growth rates of snow and ice due to vertical conductive, radiative and turbulent fluxes, along with snowfall; a model of ice\ndynamics, which predicts the velocity field of the ice pack based on a model of the material strength of\nthe ice; a transport model that describes advection of the areal concentration, ice volumes and other state\nvariables; and a ridging parameterization that transfers ice among thickness categories based on energetic\nbalances and rates of strain. External routines would prepare and execute data exchanges with an external \u201cflux coupler,\u201d which then passes the data to other climate model components such as NEMO."
+            ]
+        }, 
+        "cmip6.seaice.key_properties.variables.prognostic": {
+            "values": [
+                "Sea ice concentration", 
+                "Sea ice volume per grid cell area", 
+                "Sea ice u-velocity", 
+                "Sea ice v-velocity", 
+                "Sea ice enthalpy", 
+                "Internal ice stress"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.seawater_properties.ocean_freezing_point": {
+            "values": [
+                "Other: assur_1958"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.resolution.name": {
+            "values": [
+                "ORCA1"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.resolution.canonical_horizontal_resolution": {
+            "values": [
+                "1 degree"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.resolution.number_of_horizontal_gridpoints": {
+            "values": [
+                104760
+            ]
+        }, 
+        "cmip6.seaice.key_properties.tuning_applied.description": {
+            "values": [
+                "The CICE tuning is primarily achieved by adjusting the snow grain radius (r_snw), which impacts the surface albedo through the radiative transfer calculation, alogn with the tuning of the melting process (dt_mlt_in and rsnw_melt_in). This was done to reach a reasonable sea ice thickness and summer snow cover in pre-industrial control simulations, where \"reasonable\" is based on expert judgement. "
+            ]
+        }, 
+        "cmip6.seaice.key_properties.tuning_applied.target": {
+            "values": [
+                "Obtain best mean thickness and seasonal cycle in both hemispheres in pre-industrial control simulations."
+            ]
+        }, 
+        "cmip6.seaice.key_properties.tuning_applied.simulations": {
+            "values": [
+                "Only the pi-control was tuned. "
+            ]
+        }, 
+        "cmip6.seaice.key_properties.tuning_applied.metrics_used": {
+            "values": [
+                "We look at the IceSat sea ice thickness in the Arctic, PIOMAS thickness estimates, and the mean NSIDC ice extent from 1979 to the present. "
+            ]
+        }, 
+        "cmip6.seaice.key_properties.tuning_applied.variables": {
+            "values": [
+                "r_snw, dt_mlt_in, rsnw_melt_in"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.assumptions.description": {
+            "values": [
+                "See hunke_2010"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.assumptions.missing_processes": {
+            "values": [
+                "See hunke_2010"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.conservation.description": {
+            "values": [
+                "We conserve fresh water, energy, and salt. "
+            ]
+        }, 
+        "cmip6.seaice.key_properties.conservation.properties": {
+            "values": [
+                "Salt", 
+                "Energy", 
+                "Other: Water"
+            ]
+        }, 
+        "cmip6.seaice.key_properties.conservation.was_flux_correction_used": {
+            "values": [
+                false
+            ]
+        }, 
+        "cmip6.seaice.grid.name": {
+            "values": [
+                "ORCA1"
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.horizontal.grid": {
+            "values": [
+                "Ocean grid: Sea ice is horizontally discretised on the ocean grid."
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.horizontal.grid_type": {
+            "values": [
+                "Other: Orthogonal curvilinear tri-polar grid"
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.horizontal.scheme": {
+            "values": [
+                "Finite differences"
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.horizontal.thermodynamics_time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.horizontal.dynamics_time_step": {
+            "values": [
+                1800
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.vertical.layering": {
+            "values": [
+                "Multi-layers: Simulation uses more than two layers."
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.vertical.number_of_layers": {
+            "values": [
+                4
+            ]
+        }, 
+        "cmip6.seaice.grid.discretisation.vertical.additional_details": {
+            "values": [
+                "We use an extra surface scattering layer in the radiation. Black carbon and dust are distributed vertically within the surface scattering layer and a single interior layer for both ice and snow."
+            ]
+        }, 
+        "cmip6.seaice.grid.seaice_categories.has_mulitple_categories": {
+            "values": [
+                "TRUE"
+            ]
+        }, 
+        "cmip6.seaice.grid.seaice_categories.number_of_categories": {
+            "values": [
+                5
+            ]
+        }, 
+        "cmip6.seaice.grid.seaice_categories.category_limits": {
+            "values": [
+                "0-0.64, 0.64-1.39, 1.39-2.47, 2.47-4.57, 4.57-"
+            ]
+        }, 
+        "cmip6.seaice.grid.seaice_categories.ice_thickness_distribution": {
+            "values": [
+                "See hunke_2010"
+            ]
+        }, 
+        "cmip6.seaice.grid.snow_on_seaice.has_snow_on_ice": {
+            "values": [
+                true
+            ]
+        }, 
+        "cmip6.seaice.grid.snow_on_seaice.number_of_snow_levels": {
+            "values": [
+                1
+            ]
+        }, 
+        "cmip6.seaice.grid.snow_on_seaice.snow_fraction": {
+            "values": [
+                "The snow fraction is a function of the snow depth and is only used in the shortwave radiation code."
+            ]
+        }, 
+        "cmip6.seaice.dynamics.name": {
+            "values": [
+                "EVP"
+            ]
+        }, 
+        "cmip6.seaice.dynamics.overview": {
+            "values": [
+                "The elastic-viscous-plastic (EVP) model (hunke_1997) represents a modification of the standard viscous-plastic (VP) model for sea ice dynamics. It reduces to the VP model at time scales associated with the wind forcing, while at shorter time scales the adjustment process takes place by a numerically more efficient elastic wave mechanism. While retaining the essential physics, this elastic wave modification leads to a fully explicit numerical scheme which greatly improves the model\u2019s computational efficiency. We use the incremental remapping option for advection from lipscomb_2004."
+            ]
+        }, 
+        "cmip6.seaice.dynamics.horizontal_transport": {
+            "values": [
+                "Incremental Re-mapping: (including Semi-Lagrangian)"
+            ]
+        }, 
+        "cmip6.seaice.dynamics.transport_in_thickness_space": {
+            "values": [
+                "Incremental Re-mapping: (including Semi-Lagrangian)"
+            ]
+        }, 
+        "cmip6.seaice.dynamics.ice_strength_formulation": {
+            "values": [
+                "Rothrock 1975"
+            ]
+        }, 
+        "cmip6.seaice.dynamics.redistribution": {
+            "values": [
+                "Rafting", 
+                "Ridging"
+            ]
+        }, 
+        "cmip6.seaice.dynamics.rheology": {
+            "values": [
+                "Elastic-visco-plastic: EVP"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.energy.enthalpy_formulation": {
+            "values": [
+                "Pure ice latent and sensible heat + explicit brine inclusions (Bitz and Lipscomb)"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.energy.thermal_conductivity": {
+            "values": [
+                "Saline ice"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.energy.heat_diffusion": {
+            "values": [
+                "Conduction and radiation heat fluxes"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.energy.basal_heat_flux": {
+            "values": [
+                "Thermal Fixed Salinity: Thermal properties depend on S-T (with fixed salinity)."
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.mass.new_ice_formation": {
+            "values": [
+                "New sea ice forms when the ocean temperature drops below its freezing temperature. The ocean model performs this calculation, producing a freezing/melting potential. If the freezing/melting potential is positive, its value represents a certain amount of frazil ice that has formed in one or more layers of the ocean and floated to the surface. In general, this ice is added to the thinnest ice category. The new ice is grown in the open water area of the grid cell to a specified minimum thickness; if the open water area is nearly zero or if there is more new ice than will fit into the thinnest ice category, then the new ice is spread over the entire cell."
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.mass.ice_vertical_growth_and_melt": {
+            "values": [
+                "See section \"3.5.3 Growth and melting\" in hunke_2010 for details."
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.mass.ice_lateral_melting": {
+            "values": [
+                "Floe-size dependent (Bitz et al 2001)"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.mass.ice_surface_sublimation": {
+            "values": [
+                "If the latent heat flux is negative (i.e., latent heat is transferred from the ice to the atmosphere), snow or snow-free ice sublimates at the top surface"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.mass.frazil_ice": {
+            "values": [
+                "New sea ice forms when the ocean temperature drops below its freezing temperature. The ocean model performs this calculation, producing a freezing/melting potential. If the freezing/melting potential is positive, its value represents a certain amount of frazil ice that has formed in one or more layers of the ocean and floated to the surface. In general, this ice is added to the thinnest ice category. The new ice is grown in the open water area of the grid cell to a specified minimum thickness; if the open water area is nearly zero or if there is more new ice than will fit into the thinnest ice category, then the new ice is spread over the entire cell."
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.salt.has_multiple_sea_ice_salinities": {
+            "values": [
+                "FALSE"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.salt.sea_ice_salinity_thermal_impacts": {
+            "values": [
+                "TRUE"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.salt.mass_transport.salinity_type": {
+            "values": [
+                "Prescribed salinity profile"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.salt.thermodynamics.salinity_type": {
+            "values": [
+                "Prescribed salinity profile"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.ice_thickness_distribution.representation": {
+            "values": [
+                "Explicit"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.melt_ponds.are_included": {
+            "values": [
+                "TRUE"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.melt_ponds.formulation": {
+            "values": [
+                "Level-ice melt ponds"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.melt_ponds.impacts": {
+            "values": [
+                "Albedo"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.snow_processes.has_snow_aging": {
+            "values": [
+                "FALSE"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.snow_processes.has_snow_ice_formation": {
+            "values": [
+                "TRUE"
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.snow_processes.snow_ice_formation_scheme": {
+            "values": [
+                "At the end of the time step we check whether the snow is deep enough to lie partially below the surface of the ocean (freeboard). In this case we raise the snow base to sea level by converting some snow to ice. In rare cases this process can increase the ice thickness substantially.  For this reason snow-ice conversions are postponed until after the remapping in thickness space, which assumes that ice growth during a single time step is fairly small."
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.snow_processes.redistribution": {
+            "values": [
+                "No impact."
+            ]
+        }, 
+        "cmip6.seaice.thermodynamics.snow_processes.heat_diffusion": {
+            "values": [
+                "Single-layered heat diffusion"
+            ]
+        }, 
+        "cmip6.seaice.radiative_processes.name": {
+            "values": [
+                "delta-Eddington shortwave"
+            ]
+        }, 
+        "cmip6.seaice.radiative_processes.overview": {
+            "values": [
+                "As describe in briegleb_2007, the Delta-Eddington model is a multiple scattering radiative transfer model that treats the interactions between solar radiation and snow and sea ice. Optical properties for snow and sea ice are prescribed based on physical measurements."
+            ]
+        }, 
+        "cmip6.seaice.radiative_processes.surface_albedo": {
+            "values": [
+                "Delta-Eddington"
+            ]
+        }, 
+        "cmip6.seaice.radiative_processes.ice_radiation_transmission": {
+            "values": [
+                "Delta-Eddington"
+            ]
+        }
+    }
 }
