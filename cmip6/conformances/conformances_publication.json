@@ -1,5 +1,133 @@
 {
     "stage one (i.e. default) conformances": {
         "publish": "on"
+    },
+    "stage two (i.e. final) conformances, arranged (key:value) by MIP -> Model": {
+        "C4MIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "CMIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "DCPP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "GMMIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "HighResMIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "LS3MIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "LUMIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "OMIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        },
+        "ScenarioMIP": {
+            "CMCC-CM2-HR4": {
+                "publish": "off"
+            },
+            "CMCC-CM2-SR5": {
+                "publish": "off"
+            },
+            "CMCC-CM2-VHR4": {
+                "publish": "off"
+            },
+            "CMCC-ESM2": {
+                "publish": "off"
+            }
+        }
     }
 }
